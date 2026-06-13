@@ -1,34 +1,38 @@
-🌤️ Weather App "Pawangin"
+# Weather App "Pawangin"
 
 Aplikasi cuaca berbasis Flutter yang memungkinkan pengguna mencari informasi cuaca berdasarkan nama kota secara real-time.
 
+> Dibuat untuk memenuhi tugas mata kuliah Pemrograman Perangkat Bergerak
 
-📚 Dibuat untuk memenuhi tugas mata kuliah Pemrograman Perangkat Bergerak
+---
 
-✨ Fitur Utama
+## Fitur Utama
 
-🔍 Pencarian kota dengan validasi real-time ke API
-🌡️ Informasi cuaca terkini (suhu, angin, kelembapan, tekanan udara, jarak pandang)
-🕐 Prakiraan cuaca 6 jam ke depan
-🌅 Informasi sunrise & sunset sesuai zona waktu kota
-💾 Simpan & kelola lokasi favorit (tambah, edit, hapus)
-🎞️ Animasi Lottie dinamis sesuai kondisi cuaca
-📡 Deteksi koneksi internet saat validasi kota
+- Pencarian kota dengan validasi real-time ke API
+- Informasi cuaca terkini (suhu, angin, kelembapan, tekanan udara, jarak pandang)
+- Prakiraan cuaca 6 jam ke depan
+- Informasi sunrise & sunset sesuai zona waktu kota
+- Simpan & kelola lokasi favorit (tambah, edit, hapus)
+- Animasi Lottie dinamis sesuai kondisi cuaca
+- Deteksi koneksi internet saat validasi kota
 
-📱 Screenshot
+---
 
+## Teknologi yang Digunakan
 
-Coming soon
+| Teknologi | Keterangan |
+|-----------|------------|
+| Flutter & Dart | Framework utama pengembangan aplikasi |
+| OpenWeatherMap API | Sumber data cuaca real-time |
+| SQLite (sqflite) | Database lokal untuk menyimpan lokasi |
+| HTTP | Package untuk melakukan request ke API |
+| Lottie | Package untuk animasi cuaca |
 
+---
 
+## Struktur Folder
 
-
-🛠️ Teknologi yang Digunakan
-
-TeknologiKeteranganFlutter & DartFramework utama pengembangan aplikasiOpenWeatherMap APISumber data cuaca real-timeSQLite (sqflite)Database lokal untuk menyimpan lokasiHTTPPackage untuk melakukan request ke APILottiePackage untuk animasi cuaca
-
-📂 Struktur Folder
-
+```
 lib/
 ├── controller/
 │   ├── saved_locations_controller.dart
@@ -56,39 +60,30 @@ lib/
         ├── weather_bottom_section.dart
         ├── weather_navbar.dart
         └── weather_top_section.dart
+```
 
+---
 
-🚀 Cara Menjalankan
+## Cara Menjalankan
 
+1. Clone repository ini
+2. Masuk ke folder project
+3. Jalankan perintah berikut:
 
-Clone repository ini
+```
+flutter pub get
+flutter run
+```
 
+---
 
-bashgit clone https://github.com/kynich01/Weather_app.git
+## API Key
 
+Aplikasi ini menggunakan OpenWeatherMap API. API key tersimpan di `lib/services/weather_service.dart`.
 
-Masuk ke folder project
+---
 
+## Developer
 
-bashcd Weather_app
-
-
-Install dependencies
-
-
-bashflutter pub get
-
-
-Jalankan aplikasi
-
-
-bashflutter run
-
-
-🔑 API Key
-
-Aplikasi ini menggunakan OpenWeatherMap API. API key tersimpan di lib/services/weather_service.dart. tinggal login melalui gmail untuk mendapatkan keynya
-
-👤 Developer
-
-kynich01 — @kynich01
+- **Nama**: kynich
+- **GitHub**: [@kynich01](https://github.com/kynich01)
