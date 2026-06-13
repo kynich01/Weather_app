@@ -5,7 +5,7 @@ class WeatherService {
 
   //* Api key
   static const String apiKey =
-      "24adfde95c0852a2c80ad3b13ff83bdf";
+      "YOUR_API_KEY_HERE";
 
   Future<Map<String, dynamic>> getAllData(String place) async {
 
